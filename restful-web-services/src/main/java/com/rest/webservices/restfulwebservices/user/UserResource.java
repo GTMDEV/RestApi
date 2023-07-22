@@ -44,7 +44,7 @@ public class UserResource {
 		}
 		EntityModel<User> entityModel = EntityModel.of(user);
 		WebMvcLinkBuilder link = linkTo(methodOn(this.getClass()).retrieveAllUsers());
-		entityModel.add(link.withRel("all-user"));
+		entityModel.add(link.withRel("all-users"));
 		return entityModel;
 	}
 
