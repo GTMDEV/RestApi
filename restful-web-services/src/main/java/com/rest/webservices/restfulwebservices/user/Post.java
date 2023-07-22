@@ -1,7 +1,5 @@
 package com.rest.webservices.restfulwebservices.user;
 
-import org.hibernate.annotations.ManyToAny;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
