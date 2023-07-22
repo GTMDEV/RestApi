@@ -33,6 +33,10 @@ public class User {
 		this.birthDate = birthDate;
 	}
 
+	public User() {
+		super();
+	}
+
 	public Integer getId() {
 		return id;
 	}
@@ -41,12 +45,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getUserName() {
 		return userName;
 	}
 
-	public void setName(String name) {
-		this.userName = name;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public LocalDate getBirthDate() {
@@ -56,10 +60,9 @@ public class User {
 	public void setBirthDate(LocalDate birthDate) {
 		this.birthDate = birthDate;
 	}
-
+  
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + userName + ", birthDate=" + birthDate + "]";
+		return "User [id=" + id + ", userName=" + userName + ", birthDate=" + birthDate + "]";
 	}
-
 }
